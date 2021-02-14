@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+.bor-bottom {
+    padding: 1rem;
+    border-bottom: 2px solid rgba(70, 70, 160, 0.3);
+}
+
+.main-header {
+    background-color: rgb(255, 255, 255);
+}
+
+.main-header #logo {
+    width: 100px;
+}
+
+[class^="divs"] {
+    background-color: rgba(90, 90, 90, 0.3);
+    /* border: 2px solid #000000; */
+    margin: 1px;
+}
+
+.navbar-nav .navlink {
+    color: rgb(0, 0, 0);
+    margin: 2rem 0.3rem;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: rgba(233, 30, 30, 1);
+    transition: 0.3s ease;
+}
+
+.nav-item:hover .navlink {
+    color: rgb(255, 255, 255);
+    transition: 0.1s ease;
+}
+
+.navbar-nav .nav-item {
+    margin: 0.3rem 0rem;
+    padding: 0.3rem;
+}
+
+.navbar-nav #profile {
+    width: 90px;
+    clip-path: circle(27% at 50% 50%);
+}
+
+.navbar-nav .last-list:hover {
+    background-color: transparent;
+}
+
+.navbar #btn-toggler {
+    position: absolute;
+    top: -70px;
+    right: 0;
+}
+
+.nav-large-link .ul-large {
+    list-style-type: none;
+    display: flex;
+}
+
+.ul-large .bi {
+    width: 1.5rem;
+    height: 1.5rem;
+}

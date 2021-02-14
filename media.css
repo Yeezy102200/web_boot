@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1200px) {
+    .first-nav {
+        padding: 0 0 0 15rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .first-nav {
+        padding: 0 0 0 6rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* medium screen*/
+}
+
+@media only screen and (min-width: 576px) {
+    /* small screen*/
+}
+
+@media only screen and (min-width: 425px) {
+    /* less than small screen 576px*/
+    main {
+        padding: 3%;
+    }
+}
