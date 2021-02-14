@@ -12,7 +12,7 @@ body {
 
 .bor-bottom {
     padding: 1rem;
-    border-bottom: 2px solid rgba(70, 70, 160, 0.3);
+    border-bottom: 2px solid rgba(70, 70, 160, 0.2);
 }
 
 .main-header {
@@ -20,7 +20,7 @@ body {
 }
 
 .main-header #logo {
-    width: 100px;
+    width: 80px;
 }
 
 [class^="divs"] {
@@ -62,7 +62,7 @@ body {
 
 .navbar #btn-toggler {
     position: absolute;
-    top: -70px;
+    top: -64px;
     right: 0;
 }
 
@@ -71,7 +71,32 @@ body {
     display: flex;
 }
 
+.nav-large-link {
+    margin: 1rem 0 0 4rem;
+}
+
+.nav-large-link a {
+    margin: 0 0 0 2rem;
+}
+
 .ul-large .bi {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+
+/* MAIN display */
+
+.main-display .basics {
+    width: 70%;
+}
+
+.main-display h6 {
+    margin: 0;
+}
+
+.main-display #btn-change-password {
+    width: 40%;
+    background-color: transparent;
+    border: 2px solid rgba(70, 70, 160, 0.3);
 }

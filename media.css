@@ -1,26 +1,44 @@
-@media only screen and (min-width: 1200px) {
-    .first-nav {
-        padding: 0 0 0 15rem;
+@media only screen and (max-width: 576px) {
+    /* x-small <= 576px */
+    .main-display {
+        padding: 3%;
+    }
+    .main-display .basics {
+        width: 100%;
+    }
+    .nav-large-link {
+        display: none;
+    }
+    .main-display #btn-change-password {
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .first-nav {
-        padding: 0 0 0 6rem;
+@media only screen and (min-width: 576px) {
+    /* small >= 576px */
+    .nav-large-link {
+        display: none;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    /* medium screen*/
+    /* Medium >= 992px */
 }
 
-@media only screen and (min-width: 576px) {
-    /* small screen*/
-}
-
-@media only screen and (max-width: 425px) {
-    /* less than small screen 576px*/
-    body {
-        padding: 5%;
+@media only screen and (min-width: 992px) {
+    /* Large >= 992px */
+    .nav-large-link {
+        display: block;
     }
+    .navbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* X-large >= 1200px */
+}
+
+@media only screen and (min-width: 1400px) {
+    /* XX-Large >= 1400px */
 }

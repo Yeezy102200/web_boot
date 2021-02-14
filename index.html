@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container main-div position-relative d-lg-flex justify-content-lg-between align-items-lg-center">
+    <header class="main-header bor-bottom p-0">
+        <div class="container main-div position-relative d-lg-flex justify-content-lg-between align-items-lg-center px-lg-0">
             <a href=""><img id="logo" src="/assets/logo.png" alt=""></a>
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button id="btn-toggler" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_link"><span class="navbar-toggler-icon"></span></button>
@@ -49,7 +49,7 @@
                 </div>
             </nav>
             <!-- Show only on large screen -->
-            <nav class="nav-large-link d-">
+            <nav class="nav-large-link d-lg-flex align-items-lg-center justify-content-lg-center">
                 <ul class="ul-large">
                     <li><a href="#">Discovery</a></li>
                     <li>
@@ -63,6 +63,7 @@
                     </li>
                 </ul>
             </nav>
+            <!-- Show only on large screen -->
             <nav class="nav-large-link">
                 <ul class="ul-large">
                     <li><a href="#"><span><i class="bi bi-envelope"></i></span></a></li>
@@ -79,18 +80,34 @@
 
 
     </header>
-    <main role="main" class="my-2">
-        <section class="container w-100">
+    <main role="main" class="my-2 main-display">
+        <section class="container">
             <div class="row">
                 <div class="col bor-bottom">
-                    <h3>NICE NAGBAGO BA</h3>
+                    <h3>Account Settings</h3>
                 </div>
             </div>
             <div class="row my-4">
-                <div class="col-lg-4">
+                <div class="col-lg-4 basics">
                     <h4>Basics</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, nobis.</p>
-
+                    <p>Having an up-to-date email address attached to your account is a great step toward improve account security</p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <!-- Email Address -->
+                    <label for="email-address" class="form-label"><h6>Email Address</h6></label>
+                    <input class="form-control mb-4" type="email" name="email-address" id="email-address">
+                    <!-- Change password -->
+                    <label for="change-password" class="form-label"><h6>Password</h6></label>
+                    <input class="form-control mb-4" id="btn-change-password" type="button" name="email-address" value="Change your password">
+                    <!-- Country -->
+                    <label for="country-select" class="form-label"><h6>Country</h6></label>
+                    <select class="form-select form-control" aria-label="Default select example" id="country-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
             </div>
         </section>

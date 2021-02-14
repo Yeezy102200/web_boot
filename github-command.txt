@@ -1,0 +1,9 @@
+Git bash command !!!!!!!!!
+
+git add . or specific file name - pang add ng file sa github using terminal or sa git bash
+
+git commit -m "<Your message here/Typically kung pang ilang commit na>" pag commit then ichecheck yung 
+nagbago sa file bago i commit.
+
+git push -u origin master - final stage mapapalitan ang file sa github website.
+
