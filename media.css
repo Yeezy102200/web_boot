@@ -20,7 +20,7 @@
 
 @media only screen and (min-width: 425px) {
     /* less than small screen 576px*/
-    main {
-        padding: 3%;
+    body {
+        padding: 5%;
     }
 }
