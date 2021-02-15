@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- J QUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Other CDN inlcude -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="media.css">
     <title>Website | 1</title>
@@ -80,43 +85,110 @@
 
 
     </header>
+    <!-- ACCOUNT SETTINGS -->
     <main role="main" class="my-2 main-display">
-        <section class="container">
-            <div class="row">
-                <div class="col bor-bottom">
-                    <h3>Account Settings</h3>
+        <section class="container account-settings p-lg-0">
+            <!-- BASIC section -->
+            <div class="div-1 container bor-bottom">
+                <div class="row">
+                    <div class="col bor-bottom">
+                        <h3>Account Settings</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row my-4">
-                <div class="col-lg-4 basics">
-                    <h4>Basics</h4>
-                    <p>Having an up-to-date email address attached to your account is a great step toward improve account security</p>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-7">
-                    <!-- Email Address -->
-                    <label for="email-address" class="form-label"><h6>Email Address</h6></label>
-                    <input class="form-control mb-4" type="email" name="email-address" id="email-address">
-                    <!-- Change password -->
-                    <label for="change-password" class="form-label"><h6>Password</h6></label>
-                    <input class="form-control mb-4" id="btn-change-password" type="button" name="email-address" value="Change your password">
-                    <!-- Country -->
-                    <label for="country-select" class="form-label"><h6>Country</h6></label>
-                    <select class="form-select form-control mb-4" aria-label="Default select example" id="country-select">
+                <div class="row my-4">
+                    <div class="col-lg-4 basics">
+                        <h4>Basics</h4>
+                        <p>Having an up-to-date email address attached to your account is a great step toward improve account security.</p>
+                    </div>
+                    <div class="col-lg-1 px-0"></div>
+                    <div class="col-lg-7">
+                        <!-- Email Address -->
+                        <label for="email-address" class="form-label"><h6>Email Address</h6></label>
+                        <input class="form-control mb-4" type="email" name="email-address" id="email-address">
+                        <!-- Change password -->
+                        <label for="change-password" class="form-label"><h6>Password</h6></label>
+                        <input class="form-control mb-4" id="btn-change-password" type="button" name="change-password" value="Change your password">
+                        <!-- Country -->
+                        <label for="country-select" class="form-label"><h6>Country</h6></label>
+                        <select class="form-select form-control mb-4" aria-label="Default select example" id="country-select">
                         <option selected>Choose...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                     </select>
-                    <label for="country-select" class="form-label"><h6>Language</h6></label>
-                    <select class="form-select form-control" aria-label="Default select example" id="country-select">
+                        <label for="country-select" class="form-label"><h6>Language</h6></label>
+                        <select class="form-select form-control" aria-label="Default select example" id="country-select">
                         <option selected>Choose...</option>
                         <option value="1 ">One</option>
                         <option value="2 ">Two</option>
                         <option value="3 ">Three</option>
                     </select>
+                    </div>
                 </div>
             </div>
+            <!-- Profile Section -->
+            <div class="div-2  container bor-bottom">
+                <div class="row my-4">
+                    <div class="col-lg-4 basics">
+                        <h4>Profile</h4>
+                        <p>This information will be shown publicly so be careful what information you provide.</p>
+                    </div>
+                    <div class="col-lg-1 px-0"></div>
+                    <div class="col-lg-7">
+                        <!-- First name and Last name -->
+                        <div class="row">
+                            <div class="col-lg">
+                                <label for="first-name" class="form-label"><h6>First Name</h6></label>
+                                <input class="form-control mb-4" type="email" name="email-address" id="first-name">
+                            </div>
+                            <div class="col-lg">
+                                <label for="last-name" class="form-label"><h6>Last Name</h6></label>
+                                <input class="form-control mb-4" type="email" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <!-- Change picture -->
+                        <label for="change-picture" class="form-label"><h6>Picture</h6></label>
+                        <input class="form-control mb-4" id="btn-change-password" type="button" name="change-picture" value="Change picture">
+                        <!-- Username -->
+                        <label for="user-name" class="form-label"><h6>Username</h6></label>
+                        <input class="form-control mb-4" type="email" name="user-name" id="user-name">
+                        <!-- About you -->
+                        <label for="about-you" class="form-label"><h6>About you</h6></label>
+                        <textarea class="form-control" name="about-you" id="about-you" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- Billing Section -->
+            <div class="div-3 container bor-bottom">
+                <div class="row my-4">
+                    <div class="col-lg-4 basics">
+                        <h4>Billing</h4>
+                        <p>This information will be shown publicly so be careful what information you provide.</p>
+                    </div>
+                    <div class="col-lg-1 px-0"></div>
+                    <div class="col-lg-7">
+                        <!-- Change plan and cancel subscriptions -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6>Change Plan</h6>
+                                    <button class="text-primary" id="btn-cancel-subscription">Cancel subscription</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Payment cards -->
+                        <div class="row payment-card">
+                            <!-- Basic -->
+                            <div class="cards col-lg">
+
+                            </div>
+                            <!-- Essential -->
+                            <div class="cards col-lg"></div>
+                            <!-- Pro -->
+                            <div class="cards col-lg"></div>
+                        </div>
+
+                    </div>
         </section>
     </main>
 

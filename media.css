@@ -12,6 +12,9 @@
     .main-display #btn-change-password {
         width: 100%;
     }
+    .main-display h3 {
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -19,10 +22,16 @@
     .nav-large-link {
         display: none;
     }
+    .basics p {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     /* Medium >= 992px */
+    .main-display .basics {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
